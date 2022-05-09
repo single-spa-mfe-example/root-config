@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@mfe-example/root-config": "/mfe-example-root-config.js",
+    "@mfe-example/header": "//localhost:8100/mfe-example-header.js",
+    "@mfe-example/home": "//localhost:8200/mfe-example-home.js"
+  }
+}
