@@ -1,6 +1,7 @@
 const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-ts");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (webpackConfigEnv, argv) => {
   const orgName = "mfe-example";
@@ -14,6 +15,10 @@ module.exports = (webpackConfigEnv, argv) => {
 
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
+    devServer: {
+      port: 9000,
+      server: "https",
+    },
     plugins: [
       new HtmlWebpackPlugin({
         inject: false,
@@ -22,6 +27,14 @@ module.exports = (webpackConfigEnv, argv) => {
           isLocal: webpackConfigEnv && webpackConfigEnv.isLocal,
           orgName,
         },
+        publicPath: webpackConfigEnv.isLocal ? "" : "/root-config",
+      }),
+      new CopyPlugin({
+        patterns: [
+          {
+            from: "src/importmap.json",
+          },
+        ],
       }),
     ],
   });

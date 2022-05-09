@@ -1,4 +1,4 @@
-<single-spa-router>
+<single-spa-router base="root-config">
   <!--
 
     This is the single-spa Layout Definition for your microfrontends.
@@ -16,10 +16,22 @@
   </route>
 
   -->
-  <application name="@mfe-example/header"></application>
+  <application name="@mfe-example/header" props="basenames"></application>
   <main>
+    <route path="search">
+      <main class="container">
+        <h1>Search</h1>
+      </main>
+      <!-- <application name="@mfe-example/search" props="basenames"></application> -->
+    </route>
+    <route path="settings">
+      <main class="container">
+        <h1>Settings</h1>
+      </main>
+      <!-- <application name="@mfe-example/settings" props="basenames"></application> -->
+    </route>
     <route default>
-      <application name="@mfe-example/home"></application>
+      <application name="@mfe-example/home" props="basenames"></application>
     </route>
   </main>
 </single-spa-router>
