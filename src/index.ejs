@@ -34,7 +34,9 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"
       }
     }
   </script>
@@ -48,7 +50,9 @@
     {
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-        "@mfe-example/root-config": "//localhost:9000/mfe-example-root-config.js"
+        "@mfe-example/root-config": "//localhost:9000/mfe-example-root-config.js",
+        "@mfe-example/header": "//localhost:8100/mfe-example-header.js",
+        "@mfe-example/home": "//localhost:8200/mfe-example-home.js"
       }
     }
   </script>
