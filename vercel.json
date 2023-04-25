@@ -7,6 +7,10 @@
     {
       "source": "/home/:match*",
       "destination": "https://home-single-spa-mfe-example.vercel.app/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
     }
   ]
 }
