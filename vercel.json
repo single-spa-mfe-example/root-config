@@ -10,7 +10,7 @@
     },
     {
       "source": "/search/:match*",
-      "destination": "https://search-single-spa-mfe-example.vercel.app//:match*"
+      "destination": "https://search-single-spa-mfe-example.vercel.app/:match*"
     },
     {
       "source": "/(.*)",
