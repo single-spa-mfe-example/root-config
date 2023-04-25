@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/header/",
-      "destination": "https://header-h4narti8v-single-spa-mfe-example.vercel.app/"
+      "source": "/header/:match*",
+      "destination": "https://header-h4narti8v-single-spa-mfe-example.vercel.app/:match*"
     }
   ]
 }
