@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/header/:match*",
-      "destination": "https://header-h4narti8v-single-spa-mfe-example.vercel.app/:match*"
+      "destination": "https://header-single-spa-mfe-example.vercel.app/:match*"
     },
     {
       "source": "/home/:match*",
