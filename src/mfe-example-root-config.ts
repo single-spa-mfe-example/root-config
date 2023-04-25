@@ -10,7 +10,7 @@ const routes = constructRoutes(microfrontendLayout, {
   loaders: {},
   props: {
     basenames: {
-      root: "/root-config",
+      root: "/",
     },
   },
 });
