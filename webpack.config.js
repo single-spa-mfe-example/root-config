@@ -34,6 +34,9 @@ module.exports = (webpackConfigEnv, argv) => {
           {
             from: "src/importmap.json",
           },
+          {
+            from: "assets",
+          },
         ],
       }),
     ],
