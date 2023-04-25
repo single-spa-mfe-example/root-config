@@ -9,7 +9,7 @@
       "destination": "https://home-single-spa-mfe-example.vercel.app/:match*"
     },
     {
-      "source": "/search/:match*",
+      "source": "/app-search/:match*",
       "destination": "https://search-single-spa-mfe-example.vercel.app/:match*"
     },
     {
