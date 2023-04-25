@@ -1,6 +1,6 @@
 {
   "imports": {
-    "@mfe-example/root-config": "/root-config/mfe-example-root-config.js",
+    "@mfe-example/root-config": "/mfe-example-root-config.js",
     "@mfe-example/header": "/header/mfe-example-header.js",
     "@mfe-example/home": "/home/mfe-example-home.js",
     "@mfe-example/search": "/search/mfe-example-search.js"
