@@ -3,6 +3,10 @@
     {
       "source": "/header/:match*",
       "destination": "https://header-h4narti8v-single-spa-mfe-example.vercel.app/:match*"
+    },
+    {
+      "source": "/home/:match*",
+      "destination": "https://home-single-spa-mfe-example.vercel.app/:match*"
     }
   ]
 }
