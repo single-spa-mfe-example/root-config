@@ -3,6 +3,7 @@
     "@mfe-example/root-config": "/mfe-example-root-config.js",
     "@mfe-example/header": "/header/mfe-example-header.js",
     "@mfe-example/home": "/home/mfe-example-home.js",
-    "@mfe-example/search": "/app-search/mfe-example-search.js"
+    "@mfe-example/search": "/app-search/mfe-example-search.js",
+    "@mfe-example/settings": "/app-settings/main.js"
   }
 }

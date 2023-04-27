@@ -13,6 +13,10 @@
       "destination": "https://search-single-spa-mfe-example.vercel.app/:match*"
     },
     {
+      "source": "/app-settings/:match*",
+      "destination": "https://settings-single-spa-mfe-example.vercel.app/:match*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/"
     }
